@@ -1,7 +1,7 @@
 <header class="site-header">
 
-  <div class="brand">John Doe - Psychologue & Sexologue</div>
-  <div class="address-bar">Rue laporte 3, 4500 Maville</div>
+  <div class="brand">{{ site.owner }} - {{ site.head-line}}</div>
+  <div class="address-bar">{{ site.address-line }}</div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-default" role="navigation">
@@ -15,7 +15,7 @@
           <span class="icon-bar"></span>
         </button>
         <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-        <a class="navbar-brand" href="index.html">John Doe</a>
+        <a class="navbar-brand" href="{{ site.baseurl }}index.html">{{ site.owner }} - {{ site.head-line}}</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -23,7 +23,7 @@
           {% assign sorted_pages = site.pages | sort:"order" %}
           {% for node in sorted_pages %}
             <li>
-              <a href="{{ node.url }}">{{ node.title }}</a>
+              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
             </li>
           {% endfor %}
         </ul>
