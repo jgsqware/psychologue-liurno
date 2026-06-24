@@ -1,0 +1,39 @@
+# Mots-clés du site psychologue-liurno (Céline Liurno, psychologue & sexologue)
+# Localisation : Aux Houx 96, 4480 Clermont-sous-Huy (Engis), province de Liège, Belgique
+#
+# Une ligne = un mot-clé. Les lignes vides et celles commençant par # sont ignorées.
+# Ce fichier sert de "semence" (seed) : le script ajoute automatiquement les
+# suggestions de Google Autocomplete pour chacun de ces termes.
+
+# --- Services principaux ---
+psychologue
+sexologue
+sexologue belgique
+sexothérapie
+sexo-thérapie
+thérapie sexuelle
+thérapie de couple
+psychothérapie
+psychologue adulte
+consultation psychologue
+prendre rendez-vous psychologue
+
+# --- Services + localisation (SEO local) ---
+psychologue engis
+psychologue clermont-sous-huy
+psychologue huy
+psychologue liège
+psychologue amay
+psychologue flémalle
+psychologue seraing
+psychologue wallonie
+sexologue liège
+sexologue huy
+sexologue wallonie
+
+# --- Intentions / longue traîne ---
+psychologue pour adulte liège
+thérapie de couple liège
+problème de couple psychologue
+trouver un psychologue belgique
+remboursement psychologue belgique
