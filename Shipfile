@@ -1,0 +1,23 @@
+# Shipfile — psyneupre (vitrine Céline Liurno) · node2 via docker-context. Mode A.
+# Site statique pur (index.html + styles.css), aucun build. Ingress = edge CT100.
+app "psyneupre"
+url "https://psyneupre.jgsquare.io"
+fail_hint "docker --context node2 logs psyneupre --tail=50 · vhost psyneupre sur l'edge CT100 ?"
+check_timeout 120
+
+# Vhost edge — GENERE depuis cette ligne (`ship --render` pour le voir avant de
+# le pousser). Le port y est recopié depuis ce fichier.
+expose psyneupre 8145
+
+host node2
+step "network node2_net"            net node2_net
+step "psyneupre (build + recreate)" compose "deploy/psyneupre.node2.yml" build recreate
+step "vhost edge"                   vhost
+
+check "web"      https  psyneupre "/"
+# Un 200 ne prouve pas que l'app est servie : le catch-all edge et une page de
+# login répondent 200 tous les deux. On exige une chaîne que seule cette app peut produire.
+check "contenu"  marker psyneupre "/" "Céline Liurno"
+# Sans vhost explicite, la requête tombe dans le catch-all *.jgsquare.io :
+# la sonde HTTP serait verte et l'app jamais réellement servie.
+check "vhost"    vhost  psyneupre 8145

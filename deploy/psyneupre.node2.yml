@@ -1,0 +1,26 @@
+# psyneupre — vitrine statique (Céline Liurno). nginx:alpine non-root sur :8145.
+# Le code source (Dockerfile, index.html, styles.css) vit à la racine de CE dépôt ;
+# on build directement depuis ce contexte. Servi via l'edge Caddy sur node2_net.
+services:
+  psyneupre:
+    image: ${PSYNEUPRE_IMAGE_TAG:-psyneupre:local}
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: psyneupre
+    mem_limit: 128m
+    ports:
+      - "100.104.112.101:8145:8145"
+    restart: unless-stopped
+    environment:
+      TZ: "${TZ:-Europe/Brussels}"
+    networks:
+      - node2_net
+    labels:
+      org.opencontainers.image.title: "psyneupre"
+      org.opencontainers.image.description: "Céline Liurno — psychologue & sexologue à Plainevaux (Neupré)"
+
+networks:
+  node2_net:
+    external: true
+    name: node2_net

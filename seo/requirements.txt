@@ -1,0 +1,5 @@
+# Dépendances open source pour l'analyse de volume de mots-clés.
+# Installation : pip install -r seo/requirements.txt
+
+pytrends>=4.9.2     # Client open source (MIT) de l'API Google Trends
+requests>=2.31.0    # Appels HTTP vers Google Autocomplete (gratuit)

@@ -1,24 +1,353 @@
----
-layout: default
-title: Accueil
-permalink: /
-order: 0
----
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="container">
-  <div class="row">
-    <div class="box">
-      <div class="col-lg-12">
-        <hr>
-        <h2 class="intro-text text-center">
-          <strong>Psychologue</strong>
-          &
-          <strong>sexologue</strong>
-        </h2>
-        <hr>
-        <p>Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- SEO Primary Meta Tags -->
+    <title>Céline Liurno | Psychologue & Sexologue à Plainevaux (Neupré)</title>
+    <meta name="title" content="Céline Liurno | Psychologue & Sexologue à Plainevaux (Neupré)">
+    <meta name="description" content="Céline Liurno, psychologue et sexologue à Plainevaux (Neupré, Liège). Consultations individuelles en psychothérapie et sexologie. Accompagnement bienveillant pour adultes. Prenez rendez-vous.">
+    <meta name="keywords" content="psychologue, sexologue, Plainevaux, Neupré, Liège, psychothérapie, consultation, thérapie individuelle, bien-être, santé mentale, accompagnement psychologique, Céline Liurno">
+    <meta name="author" content="Céline Liurno">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="BE-WLG">
+    <meta name="geo.placename" content="Plainevaux, Neupré">
+    <meta name="geo.position" content="50.5333;5.5167">
+    <meta name="ICBM" content="50.5333, 5.5167">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://psy-plainevaux.be/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psy-plainevaux.be/">
+    <meta property="og:title" content="Céline Liurno | Psychologue & Sexologue à Plainevaux">
+    <meta property="og:description" content="Psychologue et sexologue à Plainevaux (Neupré). Consultations individuelles en psychothérapie et sexologie dans un espace d'écoute bienveillant.">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Céline Liurno - Psychologue">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Céline Liurno | Psychologue & Sexologue à Plainevaux">
+    <meta name="twitter:description" content="Psychologue et sexologue à Plainevaux (Neupré). Consultations individuelles en psychothérapie et sexologie.">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#7A9568">
+    <meta name="msapplication-navbutton-color" content="#7A9568">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7A9568">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Céline Liurno - Psychologue & Sexologue",
+        "description": "Cabinet de psychologie et sexologie à Plainevaux. Consultations individuelles en psychothérapie et sexologie.",
+        "url": "https://psy-plainevaux.be",
+        "email": "contact@psy-plainevaux.be",
+        "telephone": "+32471234567",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rue des Fourches 27",
+            "addressLocality": "Plainevaux",
+            "postalCode": "4122",
+            "addressRegion": "Liège",
+            "addressCountry": "BE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.5333,
+            "longitude": 5.5167
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "medicalSpecialty": ["Psychiatry", "Psychology"],
+        "availableService": [
+            {
+                "@type": "MedicalTherapy",
+                "name": "Psychothérapie",
+                "description": "Accompagnement thérapeutique pour traverser les moments de vie difficiles"
+            },
+            {
+                "@type": "MedicalTherapy",
+                "name": "Sexologie",
+                "description": "Consultation spécialisée pour les questions liées à la sexualité et l'intimité"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Céline Liurno",
+        "jobTitle": "Psychologue et Sexologue",
+        "email": "contact@psy-plainevaux.be",
+        "telephone": "+32471234567",
+        "url": "https://psy-plainevaux.be",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rue des Fourches 27",
+            "addressLocality": "Plainevaux",
+            "postalCode": "4122",
+            "addressCountry": "BE"
+        },
+        "worksFor": {
+            "@type": "MedicalBusiness",
+            "name": "Cabinet de Psychologie Céline Liurno"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">Céline Liurno</a>
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#accueil" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="#approche" role="menuitem">Approche</a></li>
+                <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="accueil">
+        <div class="hero-content">
+            <p class="hero-subtitle">Psychologue & Sexologue</p>
+            <h1 class="hero-title">Céline Liurno</h1>
+            <p class="hero-tagline">Un espace d'écoute bienveillant<br>pour vous accompagner</p>
+            <a href="#contact" class="btn">Prendre rendez-vous</a>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Découvrir</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Approche Section -->
+        <section class="section" id="approche" aria-labelledby="approche-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="approche-title">Mon approche</h2>
+                </div>
+                <div class="approach-content">
+                    <div class="approach-text">
+                        <p class="lead">
+                            Je vous accueille dans un cadre chaleureux et confidentiel,
+                            où chaque personne est écoutée avec respect et sans jugement.
+                        </p>
+                        <p>
+                            Mon approche thérapeutique est centrée sur vous, sur votre histoire
+                            et vos besoins. Ensemble, nous explorons les chemins qui vous
+                            permettront de mieux vous comprendre et d'avancer vers un
+                            mieux-être durable.
+                        </p>
+                        <p>
+                            Que vous traversiez une période difficile, que vous souhaitiez
+                            mieux vous connaître ou résoudre des difficultés relationnelles
+                            ou intimes, je suis là pour vous accompagner à votre rythme.
+                        </p>
+                    </div>
+                    <div class="approach-quote">
+                        <blockquote>
+                            "Chaque chemin est unique, chaque histoire mérite d'être entendue."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section section-alt" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title">Services</h2>
+                    <p>Consultations individuelles adaptées à vos besoins</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/>
+                                <path d="M12 8v4l2 2"/>
+                            </svg>
+                        </div>
+                        <h3>Psychothérapie</h3>
+                        <p>
+                            Accompagnement thérapeutique pour traverser les moments
+                            de vie difficiles, gérer l'anxiété, la dépression ou
+                            les questionnements existentiels.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Sexologie</h3>
+                        <p>
+                            Consultation spécialisée pour aborder les questions
+                            liées à la sexualité, l'intimité et le bien-être
+                            dans votre vie affective.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Consultation individuelle</h3>
+                        <p>
+                            Un espace personnel dédié à l'exploration de soi,
+                            au développement personnel et à la résolution
+                            de problématiques spécifiques.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-title">Contact</h2>
+                    <p>Prenez rendez-vous par téléphone ou par email</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-card">
+                        <div class="contact-phone">
+                            <span class="label">Téléphone</span>
+                            <a href="tel:+32471234567" class="phone-number">+32 471 23 45 67</a>
+                        </div>
+                        <div class="contact-email">
+                            <span class="label">Email</span>
+                            <a href="mailto:contact@psy-plainevaux.be" class="email-address">contact@psy-plainevaux.be</a>
+                        </div>
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <span class="label">Adresse</span>
+                                <address>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Fourches+27,+4122+Plainevaux,+Belgium" target="_blank" rel="noopener noreferrer" class="address-link">
+                                        Rue des Fourches 27<br>
+                                        4122 Plainevaux
+                                    </a>
+                                </address>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Horaires</span>
+                                <p>
+                                    Lundi - Vendredi<br>
+                                    Sur rendez-vous
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-name">Céline Liurno</p>
+            <p class="footer-title">Psychologue & Sexologue</p>
+            <p class="footer-address"><a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Fourches+27,+4122+Plainevaux,+Belgium" target="_blank" rel="noopener noreferrer">Rue des Fourches 27, 4122 Plainevaux</a></p>
+            <p class="footer-email"><a href="mailto:contact@psy-plainevaux.be">contact@psy-plainevaux.be</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const body = document.body;
+        let scrollPosition = 0;
+
+        function openMenu() {
+            scrollPosition = window.scrollY;
+            body.style.top = `-${scrollPosition}px`;
+            body.classList.add('menu-open');
+            navMenu.classList.add('active');
+            navToggle.setAttribute('aria-expanded', 'true');
+            navToggle.setAttribute('aria-label', 'Fermer le menu');
+        }
+
+        function closeMenu() {
+            body.classList.remove('menu-open');
+            body.style.top = '';
+            window.scrollTo(0, scrollPosition);
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+        }
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+            if (isOpen) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                closeMenu();
+
+                setTimeout(() => {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 50);
+            });
+        });
+
+        // Nav background on scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
